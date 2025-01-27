@@ -78,4 +78,26 @@
     o/p:-
     Branch 'old-branch-name' renamed to 'new-branch-name'
 
-    
+[] Steps to upload repository content to a remote repository using HTTP URL: 
+    Step 1:- Initialize a new Git repository (if not already initialized):
+              Command:- git init
+        
+
+    Step 2:- Add all files to the staging area:
+             Command:- git add .
+       
+
+    steps 3:- Commit the changes with a meaningful commit message:
+              command:- git commit -m "Your commit message"
+       
+
+    Step4:- Add the remote repository URL:
+            command:- git remote add origin <remote-repository-URL>
+        
+
+    Step 5:- Push the changes to the remote repository: 
+             command:- git push -u origin branchName
+        
+
+    Note: Replace `<remote-repository-URL>` with the actual URL of your remote repository.
+
