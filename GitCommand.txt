@@ -66,4 +66,7 @@
     git config --global user.name
     git config --global user.email
 
-16]
+16] Display the all the file in current working directory
+    ls     #Doe not display the hidden one
+    ls -a  #it display all the file with hidden file.
+    Get-ChildItem -Force   #If previous command is not working then used this 
