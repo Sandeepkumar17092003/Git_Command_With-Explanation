@@ -1,0 +1,104 @@
+[] What is git.
+    Git is a distributed version control system designed to handle everything from
+    small to very large projects with speed and efficiency. It allows multiple 
+    developers to work on a project simultaneously without interfering with each 
+    other's work. Git tracks changes to files, allowing you to revert to previous 
+    versions, collaborate with others,and maintain a history of your project.
+
+[] For initializing the git used command:-
+   command:- git init  
+    command:- git init -b BranchName
+
+    o/p:-
+    Initialized empty Git repository in D:/Project And Program COde/GIT/.git/
+
+[] See the Status:-
+    command:- git status
+
+    o/p:-
+    On branch Main    # The "main" branch you see by default is "master". If you want to change "master" to another name, you can specify the branch name at the time of git initialization.
+
+    No commits yet
+
+[] Types of Files in Git Status
+    1. Untracked: New files that Git does not yet track.
+    2. Modified: Files that have been changed.
+    3. Staged: Files that are ready to be committed.
+    4. Unmodified: Files that have not been changed.
+    
+[] Display the all the file in current working directory
+    command:- ls     #Doe not display the hidden one
+    command:- ls -a  #it display all the file with hidden file.
+    command:- Get-ChildItem -Force   #If previous command is not working then used this 
+
+
+[] For Delete the git Files:-
+    command:- rm -rf .git    # If it does not work, use the next command
+    command:- Remove-Item -Recurse -Force .git   # if you used powershell then used this command
+
+[] Add changes in the working directory to the staging area.
+   command:- git add filename    #For Single file
+    command:- git add .           #For all files
+
+[] if you want to unstage the file then used
+    command:- git -rm --cached <filename>
+
+[] View the commit history:
+    command:- git log
+
+[] Commit changes to the repository:
+    command:- git commit -m "commit message"    # Commit with a message
+
+[] If you want to skip the staging area, then use this command:
+    command:- git commit -a -m "commit message"
+
+[] if you want see the what changes happened in the file then used this command
+    command:- git diff
+
+[] To see the changes between the staging area and the last commit, use this command:
+    command:- git diff --staged    
+
+[] To delete the file into staging area you can use that this command.
+    command:- git reset HEAD filename
+    command:- git rm --cached filename
+
+[] Delete the file  from working directory used command this:-
+    command:- del filename
+
+[] For Configuration Use this command
+    command:- git config --global user.name="your Name"
+    command:- git config --global user.email="you Email"
+
+[] For displaying the configuration, you can use these commands:
+    command:- git config --global user.name
+    command:- git config --global user.email
+
+[] For changing the branch name:
+    command:- git branch -m old-branch-name new-branch-name
+
+    o/p:-
+    Branch 'old-branch-name' renamed to 'new-branch-name'
+
+[] Steps to upload repository content to a remote repository using HTTP URL: 
+    Step 1:- Initialize a new Git repository (if not already initialized):
+              Command:- git init
+        
+
+    Step 2:- Add all files to the staging area:
+             Command:- git add .
+       
+
+    steps 3:- Commit the changes with a meaningful commit message:
+              command:- git commit -m "Your commit message"
+       
+
+    Step4:- Add the remote repository URL:
+            command:- git remote add origin <remote-repository-URL>
+        
+
+    Step 5:- Push the changes to the remote repository: 
+             command:- git push -u origin branchName
+        
+
+    Note: Replace `<remote-repository-URL>` with the actual URL of your remote repository.
+
