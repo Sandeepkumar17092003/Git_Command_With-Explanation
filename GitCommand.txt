@@ -1,0 +1,69 @@
+1] What is git.
+    Git is a distributed version control system designed
+    to handle everything from small to very large projects
+    with speed and efficiency. It allows multiple 
+    developers to work on a project simultaneously 
+    without interfering with each other's work. 
+    Git tracks changes to files, allowing you 
+    to revert to previous versions, collaborate 
+    with others,and maintain a history of your project
+
+2] For initializing the git used command:-
+    git init  
+    git init -b BranchName
+
+    o/p:-
+    Initialized empty Git repository in D:/Project And Program COde/GIT/.git/
+
+3] See the Status:-
+    git status
+
+    o/p:-
+    On branch Main    # The "main" branch you see by default is "master". If you want to change "master" to another name, you can specify the branch name at the time of git initialization.
+
+    No commits yet
+
+4] For Delete the git Files:-
+    rm -rf .git    # If it does not work, use the next command
+
+    Remove-Item -Recurse -Force .git   # .git is a hidden folder
+
+5] Add changes in the working directory to the staging area.
+    git add filename    #For Single file
+    git add .           #For all files
+
+6] if you want to unstage the file then used
+    git -rm --cached <filename>
+
+7] View the commit history:
+    git log
+
+8] Commit changes to the repository:
+    git commit -m "commit message"    # Commit with a message
+
+9] If you want to skip the staging area, then use this command:
+    git commit -a -m "commit message"
+
+10] if you want see the what changes happened in the file then used this command
+    git diff
+
+11] To see the changes between the staging area and the last commit, use this command:
+    git diff --staged    
+
+12] To delete the file into staging area you can use that this command.
+    git reset HEAD filename
+    git rm --cached filename
+
+13] Delete the file  from working directory used command this:-
+    del filename
+
+
+14] For Configuration Use this command
+    git config --global user.name="your Name"
+    git config --global user.email="you Email"
+
+15] For displaying the configuration, you can use these commands:
+    git config --global user.name
+    git config --global user.email
+
+16]
