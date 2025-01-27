@@ -103,3 +103,13 @@
 
     Note: Replace `<remote-repository-URL>` with the actual URL of your remote repository.
 
+[] To merge the Remote Repository history with your Local Repository when they have different histories:
+   When you use this step (e.g., you already have a repository and files, and you want to overwrite the files in your local repository with those from the remote repository, where the filenames are the same), follow these steps to overwrite the files:
+    Step 1:- git init (if you not initialized)
+    Step 2:- git remote add <Repo URL>
+    Step 3:- git fetch origin  (is used to download objects and refs from the remote repository named origin without merging them into your local branches)
+    Step 4:- git add filename
+    Step 5:- git commit -m "Message"
+    Step 6:- git push -u origin branchName
+
+    Note:- If your local repository file name and the remote repository file name are different, the local file will not overwrite the remote file. Instead, the local file will be added as a new file in the remote repository.
