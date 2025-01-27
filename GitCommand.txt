@@ -1,72 +1,81 @@
-1] What is git.
-    Git is a distributed version control system designed
-    to handle everything from small to very large projects
-    with speed and efficiency. It allows multiple 
-    developers to work on a project simultaneously 
-    without interfering with each other's work. 
-    Git tracks changes to files, allowing you 
-    to revert to previous versions, collaborate 
-    with others,and maintain a history of your project
+[] What is git.
+    Git is a distributed version control system designed to handle everything from
+    small to very large projects with speed and efficiency. It allows multiple 
+    developers to work on a project simultaneously without interfering with each 
+    other's work. Git tracks changes to files, allowing you to revert to previous 
+    versions, collaborate with others,and maintain a history of your project.
 
-2] For initializing the git used command:-
-    git init  
-    git init -b BranchName
+[] For initializing the git used command:-
+   command:- git init  
+    command:- git init -b BranchName
 
     o/p:-
     Initialized empty Git repository in D:/Project And Program COde/GIT/.git/
 
-3] See the Status:-
-    git status
+[] See the Status:-
+    command:- git status
 
     o/p:-
     On branch Main    # The "main" branch you see by default is "master". If you want to change "master" to another name, you can specify the branch name at the time of git initialization.
 
     No commits yet
 
-4] For Delete the git Files:-
-    rm -rf .git    # If it does not work, use the next command
+[] Types of Files in Git Status
+    1. Untracked: New files that Git does not yet track.
+    2. Modified: Files that have been changed.
+    3. Staged: Files that are ready to be committed.
+    4. Unmodified: Files that have not been changed.
 
-    Remove-Item -Recurse -Force .git   # .git is a hidden folder
+[] For Delete the git Files:-
+    command:- rm -rf .git    # If it does not work, use the next command
+    command:- Remove-Item -Recurse -Force .git   # .git is a hidden folder
 
-5] Add changes in the working directory to the staging area.
-    git add filename    #For Single file
-    git add .           #For all files
+[] Add changes in the working directory to the staging area.
+   command:- git add filename    #For Single file
+    command:- git add .           #For all files
 
-6] if you want to unstage the file then used
-    git -rm --cached <filename>
+[] if you want to unstage the file then used
+    command:- git -rm --cached <filename>
 
-7] View the commit history:
-    git log
+[] View the commit history:
+    command:- git log
 
-8] Commit changes to the repository:
-    git commit -m "commit message"    # Commit with a message
+[] Commit changes to the repository:
+    command:- git commit -m "commit message"    # Commit with a message
 
-9] If you want to skip the staging area, then use this command:
-    git commit -a -m "commit message"
+[] If you want to skip the staging area, then use this command:
+    command:- git commit -a -m "commit message"
 
-10] if you want see the what changes happened in the file then used this command
-    git diff
+[] if you want see the what changes happened in the file then used this command
+    command:- git diff
 
-11] To see the changes between the staging area and the last commit, use this command:
-    git diff --staged    
+[] To see the changes between the staging area and the last commit, use this command:
+    command:- git diff --staged    
 
-12] To delete the file into staging area you can use that this command.
-    git reset HEAD filename
-    git rm --cached filename
+[] To delete the file into staging area you can use that this command.
+    command:- git reset HEAD filename
+    command:- git rm --cached filename
 
-13] Delete the file  from working directory used command this:-
-    del filename
+[] Delete the file  from working directory used command this:-
+    command:- del filename
 
+[] For Configuration Use this command
+    command:- git config --global user.name="your Name"
+    command:- git config --global user.email="you Email"
 
-14] For Configuration Use this command
-    git config --global user.name="your Name"
-    git config --global user.email="you Email"
+[] For displaying the configuration, you can use these commands:
+    command:- git config --global user.name
+    command:- git config --global user.email
 
-15] For displaying the configuration, you can use these commands:
-    git config --global user.name
-    git config --global user.email
+[] Display the all the file in current working directory
+    command:- ls     #Doe not display the hidden one
+    command:- ls -a  #it display all the file with hidden file.
+    command:- Get-ChildItem -Force   #If previous command is not working then used this 
 
-16] Display the all the file in current working directory
-    ls     #Doe not display the hidden one
-    ls -a  #it display all the file with hidden file.
-    Get-ChildItem -Force   #If previous command is not working then used this 
+[] For changing the branch name:
+    command:- git branch -m old-branch-name new-branch-name
+
+    o/p:-
+    Branch 'old-branch-name' renamed to 'new-branch-name'
+
+    
