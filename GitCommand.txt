@@ -141,7 +141,7 @@
             (pull Request:- It lets you tell others about changes you have pushed to a branch in a repository on github).
 
 [] Pull Command :-
-    git pull origin main 
+    command :- git pull origin main 
 
     (Used to fetch and download content from a remote repo and immediately update the local repo to match that content)
 
