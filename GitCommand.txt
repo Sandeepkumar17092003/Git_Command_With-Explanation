@@ -134,6 +134,7 @@
         git diff <branchName>   (To compare commits, branches , files and more)
         git merge <BranchName>  (To merge 2 branches)
 
+
     way 2:- create a PR   
 
             (PR is a pull request)
