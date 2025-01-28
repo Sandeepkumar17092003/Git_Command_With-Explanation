@@ -127,7 +127,10 @@
     git checkout -b <new BranchName>
 
 [] To delete the branch 
-    it branch -d <branchName>
+    git branch -d <branchName>  (It delete the branch locally)
+
+[] To delete the branch on the Remote repo
+    git push origin --delete <branchName>
 
 [] Merging Code 
     way 1:-
