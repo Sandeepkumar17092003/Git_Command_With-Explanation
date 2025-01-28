@@ -164,3 +164,4 @@
              git reset <Commit Hash>
              git reset --hard <commit Hash>
 
+
