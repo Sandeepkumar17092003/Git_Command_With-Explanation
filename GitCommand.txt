@@ -151,3 +151,16 @@
 
 [] Resolving Merge Conflicts
     An events that takes place when Git is unable to automatically resolves difference in code between two commits.
+
+[] Undoing Changes:-
+    Case 1:- Staged changes
+             git reset <FileName>
+             git reset
+        
+    case 2:- committed changes (For one commit)
+             git reset Head-1
+            
+    case 3:- committed changes (For many commits)
+             git reset <Commit Hash>
+             git reset --hard <commit Hash>
+
