@@ -128,3 +128,12 @@
 
 [] To delete the branch 
     it branch -d <branchName>
+
+[] Merging Code 
+    way 1:-
+        git diff <branchName>   (To compare commits, branches , files and more)
+        git merge <BranchName>  (To merge 2 branches)
+
+    way 2:- create a PR    (PR is a pull request)
+                           (pull Request:- It lets you tell others about changes you have pushed to a branch in a repository on github).
+                    
