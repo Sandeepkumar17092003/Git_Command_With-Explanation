@@ -137,7 +137,7 @@
     command:- git tag  # Displays the tags or version numbers
     command:- git tag -a versionNumber -m "message"  (For Annotated and it is only show in local system for remote you want to push the tag)
     command:- git show (It show the details about tag)
-    command:- 
+    command:- git push origin VersionNumber (For Push the tag on remote repo)
 
 [] Types of tagging:
 
