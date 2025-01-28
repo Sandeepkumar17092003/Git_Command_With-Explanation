@@ -113,3 +113,18 @@
     Step 6:- git push -u origin branchName
 
     Note:- If your local repository file name and the remote repository file name are different, the local file will not overwrite the remote file. Instead, the local file will be added as a new file in the remote repository.
+
+[] To check the branch Name use command this:
+    git branch
+
+[] To rename the branch name
+    git branch -m main
+
+[] to navigate one branch to another branch 
+    git checkout <branchName>
+
+[] To create a new branch 
+    git checkout -b <new BranchName>
+
+[] To delete the branch 
+    it branch -d <branchName>
